@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+    }
+    div{
+       padding: 10px;
+    }
+    .main{
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 50px;
+        background-color: #fdfefe;
+        display: flex;
+        flex-direction: row;
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(244, 235, 235, 0.5) -3px -3px 6px 1px inset;
+    }
+    .imge{
+        margin-top: auto;
+
+margin-bottom: auto;
+
+justify-content: center;
+align-items: center;
+    }
+    img{
+    width: 250px;
+   
+    }
+    body{
+        background: linear-gradient(rgba(111, 196, 61, 0.359),rgba(215, 200, 100, 0.545),rgba(212, 54, 54, 0.534));
+        height: 100vh;
+        /* background-image: url(Staff_bg.jpg); */
+    }
+    .con{
+        background: linear-gradient(rgba(111, 192, 64, 0.755),rgba(215, 200, 100, 0.821),rgba(212, 54, 54, 0.793));
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      border-radius: 70px;
+padding-bottom: 30px;
+box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, grey -3px -3px 6px 1px inset;        /* margin-left: auto;
+        margin-right: auto; */
+        width: 400px;
+    }
+    input{
+        margin-block: 10px;
+        padding: 7px;
+        border: none;
+        border-radius: 5px;
+    }
+    .td{
+        display: flex;
+      
+        width: 500px;
+        border: solid;
+align-content: center;
+justify-content: center;
+text-align: center;
+    }
+    h2{
+        color: rgb(255, 255, 255);
+       text-shadow: 2px 1px 1px rgb(125, 119, 119);
+    }
+    h4{
+        color: rgb(255, 246, 246);
+       text-shadow: 1px 1px rgb(75, 74, 74);
+    }
+
+    .bt{
+        background-color: rgb(71, 118, 120);
+        color: aliceblue;
+        text-shadow: 1px 1px rgb(75, 74, 74);
+
+    }
+    .bt:hover{
+        background-color: rgb(140, 208, 210);
+
+    }
+    @media (max-width: 800px){
+        .main{
+
+        width: 80%;
+    height: auto;
+        flex-direction: column;
+    }
+    .con{
+            width: 350px;
+        }
+}
+    @media (max-width: 541px){
+    
+        .main{
+
+width: 95%;
+        }
+
+        .con{
+            width: 300px;
+        }
+    }
+
+
+</style>
+
+<body>
+    <div class="main">
+    <div class="con">
+    <h2>Add Employee </h2>
+    <form action="AddStaff_Controller" method="get">
+        <table>
+            <tr>
+                <td> <h4>Name : </h4></td>
+                <td><input type="text" name="name" placeholder="Enter Name">
+                </td>
+            </tr>
+            <tr>
+                <td> <h4>Phone No. : </h4></td>
+                <td><input type="tel" name="phone" placeholder="Enter Phone Number">
+                </td>
+            </tr>
+            <tr>
+                <td><h4> Email-ID : </h4></td>
+                <td><input type="email" name="email" placeholder="Enter Email-id">
+                </td>
+            </tr>
+            <tr>
+                <td><h4>Job Profile : </h4> </td>
+                <td><input type="text" name="job" placeholder="Enter Job Profile">
+                </td>
+            </tr>
+            <tr>
+                <td><h4> Date Of Joining : </h4></td>
+                <td><input type="date" name="doj" placeholder="Enter Date of Joining ">
+                </td>
+            </tr>
+            <tr>
+                <td><h4> Documents : </h4></td>
+                <td><input type="text" name="doc" placeholder="Enter Documents Link">
+                </td>
+            </tr>
+           
+        </table>
+        <tr >
+            <td class="td"> 
+                <input class="bt" type="submit" value="Add Details">
+           <input class="bt" type="reset" >
+            </td>
+        </tr>
+    </form>
+</div>
+<div class="imge">
+<background-image>
+<img src="Images/Staff_bg.jpg" alt="">
+</background-image>
+</div>
+</div>
+</body>
+
+</html>

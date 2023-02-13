@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    *{
+list-style-type: none;
+margin: 0;
+padding: 0;
+    }
+    body{
+    
+    font-family: cursive;
+    }
+    #nav{
+        background: rgba(184, 135, 11, 0.21) !important;
+    }
+    .Buttons{
+   
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        background: radial-gradient(rgb(255, 217, 129), rgb(233, 162, 21) ,rgb(255, 119, 0));
+max-width:200px;
+height: 100vh;
+    }
+    
+    input{
+     
+       font-size: 12px;
+       margin: auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+      border-radius: 10px;
+      padding: 8px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      border: none;
+        box-shadow: inset 2px 12px 3px white,
+        inset -2px -2px 10px rgb(77, 73, 73);
+border: none;
+    }
+    input:hover{
+        box-shadow: inset 12px 12px 10px white,
+        inset -2px -2px 10px rgb(98, 96, 96);
+    }
+    section .Buttons{
+        display: block;
+       
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+        <a class="navbar-brand" href="#">
+        <img src="https://static.wixstatic.com/media/afc863_3970c996f1cb4516a2bb40b2de31c9d2~mv2.png/v1/crop/x_88,y_96,w_1030,h_928/fill/w_212,h_188,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/afc863_3970c996f1cb4516a2bb40b2de31c9d2~mv2.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Appu Ghar 
+      </a>
+        <form class="form-inline  ">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    
+        </form>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="mr-auto"></div>
+          <ul class="navbar-nav my-2 my-lg-0">
+    <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Profile
+            </a>
+              <div class="dropdown-menu dropdown-menu-lg-right" aria-labelledby="navbarDropdown">
+                <h6 class="dropdown-header">Dropdown header</h6>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+              </div>
+    
+            </li>
+    
+          </ul>
+    
+          </div>
+      </nav>
+    
+      <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+   
+      <section class="Buttons">
+        <ul>
+    <form action="AddStaff.html" method="get" style=" margin-top: 20px;">
+        <input type="submit" value="Add Staff Members">
+    </form> &emsp;
+    <form action="ViewStaff_Controller" method="get">
+        <input type="submit" value="View All Staff">
+    </form>
+</ul>
+</section>
+
+</body>
+</html>
